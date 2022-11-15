@@ -5,7 +5,8 @@
 import json
 import os
 
-from selenium.webdriver.chromium.options import ChromiumOptions as _ChromiumOptions
+#from selenium.webdriver.chromium.options import ChromiumOptions as _ChromiumOptions
+from selenium.webdriver.chrome.options import Options as _ChromiumOptions
 
 
 class ChromeOptions(_ChromiumOptions):
