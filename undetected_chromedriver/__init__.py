@@ -217,7 +217,7 @@ class Chrome(selenium.webdriver.chrome.webdriver.WebDriver):
 
               unfortunately, there  is always an edge case in which one would like to write an single script with the only contents being:
               --start script--
-              import undetected_chromedriver as uc
+              import undetectedchromedriver as uc
               d = uc.Chrome()
               d.get('https://somesite/')
               ---end script --
