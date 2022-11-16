@@ -20,7 +20,7 @@ import codecs
 dirname = os.path.abspath(os.path.dirname(__file__))
 
 with codecs.open(
-    os.path.join(dirname, "undetected_chromedriver", "__init__.py"),
+    os.path.join(dirname, "undetectedchromedriver", "__init__.py"),
     mode="r",
     encoding="utf-8",
 ) as fp:
@@ -36,15 +36,15 @@ description = (
 )
 
 setup(
-    name="undetected-chromedriver",
+    name="undetectedchromedriver",
     version=version,
-    packages=["undetected_chromedriver"],
+    packages=["undetectedchromedriver"],
     install_requires=[
         "selenium>=4.0.0",
         "requests",
         "websockets",
     ],
-    url="https://github.com/ultrafunkamsterdam/undetected-chromedriver",
+    url="https://github.com/ultrafunkamsterdam/undetectedchromedriver",
     license="GPL-3.0",
     author="UltrafunkAmsterdam",
     author_email="info@blackhat-security.nl",
