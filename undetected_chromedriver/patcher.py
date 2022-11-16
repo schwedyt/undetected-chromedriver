@@ -37,13 +37,13 @@ class Patcher(object):
         exe_name %= ""
 
     if platform.endswith("win32"):
-        d = "~/appdata/roaming/undetected_chromedriver"
+        d = "~/appdata/roaming/undetectedchromedriver"
     elif platform.startswith("linux"):
-        d = "~/.local/share/undetected_chromedriver"
+        d = "~/.local/share/undetectedchromedriver"
     elif platform.endswith("darwin"):
-        d = "~/Library/Application Support/undetected_chromedriver"
+        d = "~/Library/Application Support/undetectedchromedriver"
     else:
-        d = "~/.undetected_chromedriver"
+        d = "~/.undetectedchromedriver"
     data_path = os.path.abspath(os.path.expanduser(d))
 
     def __init__(self, executable_path=None, force=False, version_main: int = 0):
